@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script defer async src="javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#btnRegister").click(function(){
+                
+                $("#loginGradContainer").hide();
+              
+                $(".GradContainer").css({"grid-template-columns":"40% 60%"});
+                $("#registerGradContainer").fadeIn(300);
+              });
+
+              $("#btnLogin").click(function(){
+                
+                $("#registerGradContainer").hide();
+              
+                $(".GradContainer").css({"grid-template-columns":"60% 40%"});
+                $("#loginGradContainer").fadeIn(300);
+              });
+        });
+    </script> 
+</head>
+
+<body>
+    <div id="firstgradContainer">
+
+        <div id="loginGradContainer" class="GradContainer" >
+            <div class="leftDiv">
+                <img src="images/logo.png" class="logo">
+                <p>LOGIN</p>
+                <form action="" method="POST" onsubmit="">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input id="userAcc" name="userAcc" type="text" placeholder="Account" onblur="chechData()">
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input id="userPass" name="userPass" type="password" placeholder="Password" onblur="chechData()">
+                        <input id="submitLogin" class="submit" type="submit" value="LOGIN">
+                    </div>
+                </form>
+            </div>
+            <div class="rightDiv">
+
+                <p class="dontHave">Don't have an account?
+                    <br>
+                    <br>
+                    <a id="btnRegister">Sign up</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Register -->
+        <div id="registerGradContainer" class="GradContainer" style="display: none">
+                <div class="rightDiv">
+                  <p class="dontHave">have an account?
+                        <br>
+                        <br>
+                        <a id="btnLogin">Log in</a>
+                    </p>
+                </div>
+                <div class="leftDiv">
+    
+                        <img src="images/logo.png" class="logo">
+                    <p>REGISTRATION</p>
+                    <form action="" method="POST" onsubmit="">
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input id="userName" name="userName" type="text" placeholder="Full Name" onblur="chechData()">
+                        </div>
+                        <div class="input-wrapper">
+                                <i class="fas fa-at"></i>
+                                <input id="userEmail" name="userEmail" type="email" placeholder="E-Mail" onblur="chechData()">
+                            </div>
+                           
+                                <div class="input-wrapper">
+                                        <i class="fas fa-phone"></i>
+                                        <input id="userPhone" name="userPhone" type="text" placeholder="Phone" onblur="chechData()">
+                                    </div>
+                                    <div class="input-wrapper">
+                                            <i class="fas fa-home"></i>
+                                              <input id="userAdress" name="userAdress" type="text" placeholder="City" onblur="chechData()">
+                                          </div>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input id="userPass" name="userPass" type="password" placeholder="Password" onblur="chechData()">
+                            <input id="submitRegister" class="submit" type="submit" value="REGISTER">
+                        </div>
+                    </form>
+                  
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
