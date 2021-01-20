@@ -1,0 +1,110 @@
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: rgb(82, 85, 172);
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: rgb(151, 153, 205);
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: rgb(255, 115, 179);
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  .myslides{
+      width: 100%;
+      background-color: rgb(151, 153, 205);
+  }
+
+  /*products*/
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 1%;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 35%;
+    font-size: 18px;
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  .pink
+  {
+    background-color: rgb(255, 115, 179);
+  }
+  .blu
+  {
+    background-color: rgb(82, 85, 172);
+
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  /*footer*/
+  .footer {
+    left: 0;
+    bottom: 0;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    width: 100%;
+    background-color: rgb(255, 115, 179);
+    color: white;
+    text-align: center;
+  }
+  .footerContain{
+    width: 30%;
+    display: inline-block;
+  }
+  .footer-links, .social-icons
+{
+  padding-left:0;
+  list-style:none
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.social-icons li{
+  float: left;
+  margin-left:20px ;
+
+}
+.social-icons
+{
+  margin-left: 45%;
+}
+
